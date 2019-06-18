@@ -4,6 +4,8 @@
 	<title>New York</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Asap|Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,500|Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -24,10 +26,10 @@
 				<div class="top-nav" id="myTopnav">
 				
 					<a href="#">Home</a>
-					<a href="#">About</a>
-					<a href="#">Service</a>
-					<a href="#">Portfolio</a>
-					<a href="#">Contact</a>
+					<a href="#about">About</a>
+					<a href="#services">Service</a>
+					<a href="#portfolio">Portfolio</a>
+					<a href="#footer">Contact</a>
 					<a href="#" id="menu" class="icon">&#9776;</a>
 				
 			</div>
@@ -47,7 +49,8 @@
 	</div>
 </section>
 
-<section class="about">
+<section id="about">
+	
 	<div class="about-me container">
 		<div class="description">
 			<span>About me</span>
@@ -58,12 +61,12 @@
 		<div>
 			<img src="images/about.jpg">
 		</div>
-
+	</div>
 	</div>
 </section>
 
-<section class="services">
-	<div class="container">
+<section id="services">
+	<div class="services container">
 		<h2>Services</h2>
 		<div class=service-container>
 			<div><img src="images/service1.png"></div>
@@ -106,8 +109,8 @@
 	</div>
 </section>
 
-<section class="portfolio">
-	<div class="container">
+<section id="portfolio">
+	<div class="portfolio container">
 		<h2>Portfolio</h2>
 		<div class="portfolio-container">
 			<div><img src="images/portf-1.png"></div>
@@ -126,6 +129,20 @@
 <section class="testimonials">
 	<div class="container">
 		<h2>Testimonials</h2>
+		
+		<div class="testimonials-container">
+		
+		<div class="testimonials-info">
+				
+				<div class="photo">
+					<img src="images/testimonials.png">
+				</div>
+				<div class="text-info">
+					<p>Limara Tusi</p>
+					<span>Ceo, random company</span>
+					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+				</div>
+		</div>
 		<div class="testimonials-info">
 				<div class="photo">
 					<img src="images/testimonials.png">
@@ -133,9 +150,36 @@
 				<div class="text-info">
 					<p>Limara Tusi</p>
 					<span>Ceo, random company</span>
-					<p class="text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
 				</div>
 		</div>
+		<div class="testimonials-info">
+				<div class="photo">
+					<img src="images/testimonials.png">
+				</div>
+				<div class="text-info">
+					<p>Limara Tusi</p>
+					<span>Ceo, random company</span>
+					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+				</div>
+		</div>
+</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    			
+    			<script type="text/javascript">
+						$('.testimonials-container').slick({
+  							dots: true,
+  							speed: 300,
+  							slidesToShow: 1,
+  							adaptiveHeight: true
+							});
+        					
+        				
+        				$('.testimonials-container').slick();
+
+    			</script>     
+
 	</div>
 	
 </section>
