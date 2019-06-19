@@ -113,17 +113,45 @@
 	<div class="portfolio container">
 		<h2>Portfolio</h2>
 		<div class="portfolio-container">
-			<div><img src="images/portf-1.png"></div>
-			<div><img src="images/portf-2.png"></div>
-			<div><img src="images/portf-3.png"></div>
-			<div><img src="images/portf-4.png"></div>
-			<div><img src="images/portf-5.png"></div>
-			<div><img src="images/portf-6.png"></div>
-			
+			<div class="show-photo"><img src="images/portf-1.png"></div>
+			<div class="show-photo"><img src="images/portf-2.png"></div>
+			<div class="show-photo"><img src="images/portf-3.png"></div>
+			<div class="show-photo"><img src="images/portf-4.png"></div>
+			<div class="show-photo"><img src="images/portf-5.png"></div>
+			<div class="show-photo"><img src="images/portf-6.png"></div>
+			<div class="hide-photo"><img src="images/portf-1.png"></div>
+			<div class="hide-photo"><img src="images/portf-2.png"></div>
+			<div class="hide-photo"><img src="images/portf-3.png"></div>	
 		</div>
-		<div class="button-portfolio"><p>Load more</p></div>
 		
-	</div>
+		<button class="button-portfolio"><p>Load more</p></button>
+		<button class="close_button">
+            	<span class="text1">roll back</span>
+    	</button>
+   	 	
+
+	
+<script>
+ 	$(document).ready(function() {
+        $( ".button-portfolio" ).click(function() {
+          $( ".portfolio-container" ).show();
+          $( ".show-photo" ).show();
+          $( ".hide-photo" ).show( 1000 );
+          $(this).hide();
+         	$(".close_button").show();
+          });
+         
+        $( ".close_button" ).click(function() {
+          $( ".show-photo").show( 1000 );
+          $(".hide-photo").hide( 1000 );
+          $( ".button-portfolio" ).show();
+          $(".close_button").hide();
+        });
+	 });
+</script>
+
+
+</div>
 </section>
 
 <section class="testimonials">
@@ -192,6 +220,7 @@
 			<div><img src="images/funfact-4.png"></div>
 		</div>
 	</div>
+
 </section>
 
 <footer>
