@@ -10,8 +10,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,500|Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-
 </head>
 <body>
 	<section class="home">
@@ -23,16 +21,14 @@
 				<span>New York expert</span>
 			</div>
 			<nav>
-				<div class="top-nav" id="myTopnav">
-				
+				<div class="top-nav" id="myTopnav">				
 					<a href="#">Home</a>
 					<a href="#about">About</a>
 					<a href="#services">Service</a>
 					<a href="#portfolio">Portfolio</a>
 					<a href="#footer">Contact</a>
-					<a href="#" id="menu" class="icon">&#9776;</a>
-				
-			</div>
+					<a href="#" id="menu" class="icon">&#9776;</a>	
+				</div>
 			</nav>
 		</header>
 		<main>
@@ -43,14 +39,11 @@
 					<div>Know more</div>
 					<div>Hire me</div>
 			</div>
-			</div>
-			
+			</div>	
 		</main>
 	</div>
 </section>
-
 <section id="about">
-	
 	<div class="about-me container">
 		<div class="description">
 			<span>About me</span>
@@ -64,7 +57,6 @@
 	</div>
 	</div>
 </section>
-
 <section id="services">
 	<div class="services container">
 		<h2>Services</h2>
@@ -76,9 +68,7 @@
 			<div><img src="images/service5.png"></div>
 			<div><img src="images/service6.png"></div>
 		</div>
-		
-	</div>
-	
+	</div>	
 </section>
 <section class="skill">
 	<div class="container">
@@ -108,7 +98,6 @@
 		</div>
 	</div>
 </section>
-
 <section id="portfolio">
 	<div class="portfolio container">
 		<h2>Portfolio</h2>
@@ -123,75 +112,65 @@
 			<div class="hide-photo"><img src="images/portf-2.png"></div>
 			<div class="hide-photo"><img src="images/portf-3.png"></div>	
 		</div>
-		
 		<button class="button-portfolio"><p>Load more</p></button>
-		<button class="close_button">
-            	<span class="text1">roll back</span>
-    	</button>
-   	 	
-
-	
-<script>
- 	$(document).ready(function() {
-        $( ".button-portfolio" ).click(function() {
-          $( ".portfolio-container" ).show();
-          $( ".show-photo" ).show();
-          $( ".hide-photo" ).show( 1000 );
-          $(this).hide();
-         	$(".close_button").show();
-          });
-         
-        $( ".close_button" ).click(function() {
-          $( ".show-photo").show( 1000 );
-          $(".hide-photo").hide( 1000 );
-          $( ".button-portfolio" ).show();
-          $(".close_button").hide();
-        });
-	 });
-</script>
-
-
-</div>
+		<button class="close_button"><span class="text1">roll back</span></button>
+   	 		
+		<script>
+		 	$(document).ready(function() {
+		        $( ".button-portfolio" ).click(function() {
+		          $( ".portfolio-container" ).show();
+		          $( ".show-photo" ).show();
+		          $( ".hide-photo" ).show( 1000 );
+		          $(this).hide();
+		         	$(".close_button").show();
+		          });
+		         
+		        $( ".close_button" ).click(function() {
+		          $( ".show-photo").show( 1000 );
+		          $(".hide-photo").hide( 1000 );
+		          $( ".button-portfolio" ).show();
+		          $(".close_button").hide();
+		        });
+			 });
+		</script>
+	</div>
 </section>
-
 <section class="testimonials">
 	<div class="container">
 		<h2>Testimonials</h2>
-		
 		<div class="testimonials-container">
+			<div class="testimonials-info">
+				<div class="photo">
+					<img src="images/testimonials.png">
+				</div>
+				<div class="text-info">
+					<p>Limara Tusi</p>
+					<span>Ceo, random company</span>
+					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+				</div>
+			</div>
+			<div class="testimonials-info">
+				<div class="photo">
+					<img src="images/testimonials.png">
+				</div>
+				<div class="text-info">
+					<p>Limara Tusi</p>
+					<span>Ceo, random company</span>
+					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+				</div>
+			</div>
+			<div class="testimonials-info">
+				<div class="photo">
+					<img src="images/testimonials.png">
+				</div>
+				<div class="text-info">
+					<p>Limara Tusi</p>
+					<span>Ceo, random company</span>
+					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+				</div>
+			</div>
+		</div>
 		
-		<div class="testimonials-info">
-				
-				<div class="photo">
-					<img src="images/testimonials.png">
-				</div>
-				<div class="text-info">
-					<p>Limara Tusi</p>
-					<span>Ceo, random company</span>
-					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
-				</div>
-		</div>
-		<div class="testimonials-info">
-				<div class="photo">
-					<img src="images/testimonials.png">
-				</div>
-				<div class="text-info">
-					<p>Limara Tusi</p>
-					<span>Ceo, random company</span>
-					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
-				</div>
-		</div>
-		<div class="testimonials-info">
-				<div class="photo">
-					<img src="images/testimonials.png">
-				</div>
-				<div class="text-info">
-					<p>Limara Tusi</p>
-					<span>Ceo, random company</span>
-					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
-				</div>
-		</div>
-</div>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
     			
@@ -201,15 +180,10 @@
   							speed: 300,
   							slidesToShow: 1,
   							adaptiveHeight: true
-							});
-        					
-        				
+							});	
         				$('.testimonials-container').slick();
-
     			</script>     
-
 	</div>
-	
 </section>
 <section class="funfact">
 	<div class="container">
@@ -220,9 +194,7 @@
 			<div><img src="images/funfact-4.png"></div>
 		</div>
 	</div>
-
 </section>
-
 <footer>
 	<div class="container">
 		<h2>Say hello!</h2>
@@ -232,19 +204,17 @@
 			<textarea type="text" placeholder="Messadge"></textarea>
 			<button type="submit">Send</button>
 		</form>
-	
 		<div class="line"></div>
 		<div class="social">
 			<div class="social-likes">
-					<i class="fab fa-facebook-square"></i>
-					<i class="fab fa-twitter-square"></i>
-					<i class="fab fa-pinterest-square"></i>
-					<i class="fab fa-linkedin"></i>
-					<i class="fab fa-google-plus-square"></i>
-					<i class="fab fa-behance-square"></i>
-					<p>2017. All Right Reserved</p>
-				</div>
-			
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter-square"></i>
+				<i class="fab fa-pinterest-square"></i>
+				<i class="fab fa-linkedin"></i>
+				<i class="fab fa-google-plus-square"></i>
+				<i class="fab fa-behance-square"></i>
+				<p>2017. All Right Reserved</p>
+			</div>
 		</div>
 	</div>
 <footer>

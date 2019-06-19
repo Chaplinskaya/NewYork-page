@@ -9,7 +9,6 @@ body
 	font-family: Asap;
 	font-size: 16px;
 	color: #4d4d4d;
-	max-width: 1366px;
 	width: 100%;
 }
 .container
@@ -30,11 +29,10 @@ li
 .home
 {
 	background: url('../images/home-hero.jpg') no-repeat;
+	background-size: cover;
 	height: 750px;
 	max-height: 100%;
-	width: 1366px;
-	max-width: 100%;
-	
+	width: 100%;
 }
 header, main
 {
@@ -267,6 +265,10 @@ h2
 {
 	max-width: 100%;
 }
+.portfolio button
+{
+	border: 0;
+}
 .button-portfolio
 {
 	width: 190px;
@@ -305,6 +307,10 @@ h2
 	box-shadow: 0 0 8px rgba(0,0,0,0.1);
 	margin: 20px auto;
 	text-transform: uppercase;
+}
+.close_button:hover
+{
+	background-color: #f6f6f6;
 }
 .testimonials-container
 {
@@ -396,6 +402,7 @@ h2
 footer
 {
 	background: url('../images/footer.jpg') no-repeat;
+	background-size: cover;
 	color: #fff;
 }
 footer h2:before
@@ -414,7 +421,7 @@ footer h2
 .container form input
 {
 	font-size: 16px;
-	width: 48.8%;
+	width: 49.3%;
 	height: 60px;
 	margin-bottom: 20px;
 }
