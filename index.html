@@ -9,6 +9,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Asap|Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,500|Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!--[if lt IE 9]>
+  	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body>
@@ -199,8 +202,10 @@
 	<div class="container">
 		<h2>Say hello!</h2>
 		<form class="footer-form" name="footer-form">
-			<input type="text" size="40"  placeholder="Name">
-			<input type="email" size="40" placeholder="Email">
+			<div class="input-class">
+				<input type="text" size="40"  placeholder="Name">
+				<input type="email" size="40" placeholder="Email">
+			</div>
 			<textarea type="text" placeholder="Messadge"></textarea>
 			<button type="submit">Send</button>
 		</form>

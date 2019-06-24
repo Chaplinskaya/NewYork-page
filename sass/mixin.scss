@@ -1,0 +1,54 @@
+@mixin grid($cols, $margin)
+{
+	float: left;
+	margin-right: $margin;
+
+	@if($cols >= 5)
+	{
+		width: 100%;
+		margin-right: 0;
+	}
+	@else
+	{
+		width: ((100% - (($cols - 1) * $margin)) / $cols);
+		margin-right: $margin;
+	}
+
+	&:nth-child(#{$cols}n)
+	{
+	margin-right: 0;
+	}
+}
+
+@mixin font
+{
+	font-family: Asap;
+	font-size: 16px;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+@mixin padd_marg
+{
+	padding-top: 120px;
+	margin-bottom: 70px;
+}
+@mixin link ($link, $hover, $active, $visited)
+{
+	a
+	{
+		color: $link;
+
+		&:hover
+		{
+			color: darken($link, 80%);
+		}
+		&:active
+		{
+			color: $active;
+		}
+		&:visited
+		{
+			color: $visited;
+		}
+	}
+}
