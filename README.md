@@ -1,1 +1,1 @@
-# NewYork-page
+# NewYork-page - adaptive landing page
