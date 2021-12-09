@@ -763,9 +763,31 @@ footer button {
 	}
 	.main__button {
 		padding-top: 50px;
+		display: block;
+	}
+	.main__button button {
+		display: block;
+		margin: 0 auto;
+	}
+	button.button_know {
+		margin-right: 0px;
+		margin: 0 auto;
+	}
+	button.button_hire {
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	button.button_know:hover,
+	button.button_hire:hover
+	 {
+		background-color: #fff;
+		border-color: #fff;
+	}
+	.button-2 div:nth-child(1) {
+		margin-right: 0px;
 	}
 	.about {
-		padding-top: 50px;
+		padding-top: 0px;
 	}
 	.about-me {
 		padding: 0 10px;
