@@ -500,7 +500,7 @@ footer button {
 		width: 900px;
 	}
 	.home {
-		background: url('../images/home-hero.jpg') 68%/cover no-repeat;
+		background: url('../images/home-hero.jpg') 65%/cover no-repeat;
 }
 @media screen and (max-width: 1200px) {
 	.testimonials-container {
@@ -619,7 +619,7 @@ footer button {
 	.menu {
 		position: fixed;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: flex-start;
 		top: 0;
 		left: -100%;
@@ -639,7 +639,7 @@ footer button {
 	.menu__link {
 		padding-right: 0;
         border: none;
-        margin: 10px 0;
+        margin: 20px 0;
 		font-size: 32px;
 	}
 	.menu__link:hover {
@@ -839,7 +839,6 @@ footer button {
 		padding-top: 20px;
 		margin-bottom: 20px;
 		margin: auto;
-		margin-right: 30px;
 	}
 	input
 	{
