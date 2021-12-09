@@ -500,7 +500,7 @@ footer button {
 		width: 900px;
 	}
 	.home {
-		background: url('../images/home-hero.jpg') 50%/cover no-repeat;
+		background: url('../images/home-hero.jpg') 68%/cover no-repeat;
 }
 @media screen and (max-width: 1200px) {
 	.testimonials-container {
