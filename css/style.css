@@ -56,8 +56,7 @@ header {
 }
 .menu__link {
 	position: relative;
-	padding-left: 0;
-	font-size: 24px;
+	padding-left: 0px;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 36px;
@@ -148,7 +147,7 @@ p {
 	font-size: 16px;
 	font-size: 1rem;
 	padding-top: 15px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	line-height: 1.5;
 }
 span {
@@ -310,8 +309,6 @@ p {
 	background-color: #fff;
 	box-shadow: 0 0 8px rgba(0,0,0,0.1);
 	margin: 20px auto;
-	left: 50%;
-	transform: translate(90%, 0);
 }
 .close_button:hover {
 	background-color: red;
@@ -393,8 +390,8 @@ ul.slick-dots button aria-label {
 	
 }
 .funfact {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .funfuct-wrapper {
 	min-height: 300px;
@@ -437,9 +434,9 @@ footer h2:before {
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
-.container form {
-	width: 70%;
-	margin:  auto;
+form {
+	min-width: 300px;
+	margin: 0 auto;
 }
 input
 {
@@ -448,6 +445,9 @@ input
 	height: 60px;
 	margin-bottom: 20px;
 	padding-left: 10px;
+}
+form input:first-child {
+	margin-right: 20px;
 }
 textarea
 {
@@ -481,6 +481,7 @@ footer button {
 .social-likes {
 	text-align: left;
 	display: flex;
+	justify-content: center
 }
 .social-likes i {
 	font-size: 28px;
@@ -490,10 +491,10 @@ footer button {
 .social-likes:hover {
 	background-color: #0084b4;
 }
- footer p {
-	padding-left: 70%;
+.footer_info {
+	text-align: center;
+	padding-top: 20px;
 }
-
 @media screen and (max-width: 1300px)
 {
 	.container {
@@ -572,7 +573,7 @@ footer button {
 		grid-gap: 30px;
 	}
 	.testimonials-container {
-		margin: 40px auto;
+		margin: 15px auto;
 		max-width: 680px;
 	}
 	.wrapper-info {
@@ -600,10 +601,10 @@ footer button {
 	.social-likes p {
 		padding-left: 50px;
 	}
-	.container form textarea {
+	form textarea {
 		width: 100%;
 	}
-	.container form input {
+	form input {
 		width: 100%;
 		height: 60px;
 		margin-bottom: 20px;
@@ -640,7 +641,7 @@ footer button {
 		padding-right: 0;
         border: none;
         margin: 20px 0;
-		font-size: 32px;
+		font-size: 30px;
 	}
 	.menu__link:hover {
 	}
@@ -787,7 +788,7 @@ footer button {
 		margin-right: 0px;
 	}
 	.about {
-		padding-top: 0px;
+		padding-top: 50px;
 	}
 	.about-me {
 		padding: 0 10px;
@@ -802,8 +803,14 @@ footer button {
 		grid-template-columns: 1fr 1fr;
 		padding-bottom: 90px;
 	}
+	.services {
+		padding-top: 50px;
+	}
 	.services img {
 		width: 90%;
+	}
+	.skill {
+		padding-top: 50px;
 	}
 	.skill__wrapper {
 		padding: 0 10px;
@@ -824,8 +831,8 @@ footer button {
 		margin-right: 40px;
 	}
 	.container form {
-		width: 90%;
-		margin:  auto;
+		
+		margin: 0 auto;
 	}
 	.portfolio-container {
 		grid-template-columns: 1fr;
@@ -846,26 +853,35 @@ footer button {
 	}
 	.text-info p:last-child {
 		margin-top: 10px;
-		line-height: 20px;
-		font-size: 14px;
+		line-height: 18px;
+		font-size: 13px;
+	}
+	.funfact {
+		padding-top: 50px;
 	}
 	.funfact-container {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
 	.funfact-image {
-		padding: 10px 0 40px 0;
+		padding: 10px 10px 40px 10px;
 	}
- 	textarea {
-		width: 100%;
-		height: 200px;
-		padding-top: 20px;
-		margin-bottom: 20px;
-		margin: auto;
+	.input-class {
+		flex-direction: column;
 	}
-	input
-	{
-		width: 100%;
+	.input-class input {
+		
+	}
+	.container form input {
+		width: 90%;
 		height: 60px;
-		margin-bottom: 20px;
+		margin: 10px;
+		
 	}
-}
+ 	form textarea {
+		width: 90%;
+		height: 200px;
+		margin: 10px;
+	}
+	footer button {
+		margin-left: 10px;
+	}

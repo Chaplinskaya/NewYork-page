@@ -13,6 +13,7 @@ $(document).ready(function() {
     const hamburger = document.querySelector('.hamburger'),
           menu = document.querySelector('.menu'),
           menulink = document.querySelectorAll('.menu__link');
+		  
     
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('hamburger_active');
@@ -36,12 +37,14 @@ $(document).ready(function() {
     });
 
  $(document).ready(function() {
+	closeButton = document.querySelector('.close_button');
 	$( ".button-portfolio" ).click(function() {
 		$( ".portfolio-container" ).show();
 		$( ".show-photo" ).show();
 		$( ".hide-photo" ).show( 1000 );
-		$(this).hide();
-			$(".close_button").show();
+		$(this).hide();	
+		$(".close_button").show();
+		closeButton.style = 'display: block';
 		});
 		
 	$( ".close_button" ).click(function() {
